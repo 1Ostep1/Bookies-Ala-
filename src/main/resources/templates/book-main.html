@@ -9,7 +9,7 @@
     <body>
     <header th:insert="blocks/header :: header"></header>
     <div class="container mt-5">
-        <h1>Book</h1>
+        <h1>Books</h1>
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -22,7 +22,7 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-outline-secondary">
-                                                <a th:href="${el.url}">Read</a></button>
+                                                <a th:href="${el.url}" target="_blank">Read</a></button>
                                             <button type="button" class="btn btn-sm btn-outline-secondary"><a th:href="'/book/' + ${el.id}">More</a></button>
                                         </div>
                                         <b>Views: <span><small th:href="${el.views}" class="text-muted"></small></span></b>

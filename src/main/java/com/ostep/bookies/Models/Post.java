@@ -60,7 +60,5 @@ public class Post {
         this.url = url;
         this.fullText = fullText;
     }
-
-    public Post() {
-    }
+    public Post(){}
 }

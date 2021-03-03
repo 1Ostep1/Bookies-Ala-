@@ -19,7 +19,7 @@ public class BlogController {
     @Autowired
     private BlogRepository blogRepository;
 
-    @GetMapping("/home")
+    @GetMapping("/")
     public String blogMain(Model model){
         Iterable<Blog> blogs = blogRepository.findAll();
         model.addAttribute("blogs",blogs);
@@ -36,13 +36,13 @@ public class BlogController {
                              @RequestParam String fullTextBlog, Model model){
         Blog blog = new Blog(titleBlog,anonsBlog,fullTextBlog);
         blogRepository.save(blog);
-        return "redirect:/home";
+        return "redirect:/";
     }
 
     @GetMapping("/blog/{id}")
     public String blogDetails(@PathVariable(value = "id") long id, Model model){
         if(!blogRepository.existsById(id)){
-            return "redirect:/home";
+            return "redirect:/";
         }
         Optional<Blog> blog = blogRepository.findById(id);
         ArrayList<Blog> res = new ArrayList<>();
@@ -55,7 +55,7 @@ public class BlogController {
     public String blogDelete(@PathVariable(value = "id") long id, Model model){
         Blog blog = blogRepository.findById(id).orElseThrow();
         blogRepository.delete(blog);
-        return "redirect:/home";
+        return "redirect:/";
     }
 }
 

@@ -1,6 +1,7 @@
 # Bookies-Ala-Too
 
 * [General info](#general-info)
+* [API Description](#API-Description)
 * [What is used](#What-is-used)
 * [Notes](#notes)
 * [Contact](#contact)
@@ -15,10 +16,24 @@
 
 * This is Web Application, where you can add some blogs, and books.
 
+## API Description
+
+* To signIn you should access /
+* To view all blog you should access /home
+* To view all books you should access /book
+* To access data by REST API entry point is /users
+* To add book you should access /book/add
+* To add book you should access /blog/add
+* To read book details you should access /book/${id}
+* To read blog details you should access /blog/${id}
+
 ## What is used
 * MVC
 * PostgreSQL
 * Bootstrap
+* Spring
+* Firebase
+* Rest API
 
 ## Notes
 

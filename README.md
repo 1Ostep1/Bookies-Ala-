@@ -18,14 +18,14 @@
 
 ## API Description
 
-* To signIn you should access /
-* To view all blog you should access /home
-* To view all books you should access /book
-* To access data by REST API entry point is /users
-* To add book you should access /book/add
-* To add book you should access /blog/add
-* To read book details you should access /book/${id}
-* To read blog details you should access /blog/${id}
+* To signIn you should access "/"
+* To view all blog you should access "/home"
+* To view all books you should access "/book"
+* To access data by REST API entry point is "/users"
+* To add book you should access "/book/add"
+* To add book you should access "/blog/add"
+* To read book details you should access "/book/${id}"
+* To read blog details you should access "/blog/${id}"
 
 ## What is used
 * MVC

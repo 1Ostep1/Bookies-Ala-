@@ -18,8 +18,8 @@
 
 ## API Description
 
-* To signIn you should access "/"
-* To view all blog you should access "/home"
+* To login you should access "/login"
+* To view all blog you should access "/"
 * To view all books you should access "/book"
 * To access data by REST API entry point is "/users"
 * To add book you should access "/book/add"

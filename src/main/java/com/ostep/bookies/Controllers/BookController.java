@@ -28,7 +28,7 @@ public class BookController {
 
     @GetMapping("/book/add")
     public String bookAdd(Model model){
-        return "/book-add";
+        return "book-add";
     }
 
     @PostMapping("/book/add")

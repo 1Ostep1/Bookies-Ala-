@@ -22,7 +22,6 @@
 * To login you should access "/login"
 * To view all blog you should access "/"
 * To view all books you should access "/book"
-* To access data by REST API entry point is "/users"
 * To add book you should access "/book/add"
 * To add book you should access "/blog/add"
 * To read book details you should access "/book/${id}"
